@@ -1,9 +1,13 @@
+.increased-height {
+    height: 500px; /* Defina a altura desejada em pixels */
+}
+
 /* Estilos para a roleta de imagens */
 .image-roulette {
     text-align: center;
     position: relative;
   }
-  
+
   .image-roulette-container {
     overflow: hidden;
     position: relative;
@@ -59,4 +63,3 @@
   .image-indicators .active {
     background-color: #333;
   }
-  
