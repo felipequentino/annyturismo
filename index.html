@@ -19,21 +19,21 @@
     <body class="font-body bg-gray-200">
 
         <!-- home section -->
-        <section class="bg-green-800 header-section mb-20 md:mb-52 xl:mb-72">
+        <section class="bg-green-900 header-section mb-20 md:mb-52 xl:mb-72">
 
             <div class="container max-w-screen-xl mx-auto px-4">
 
                 <nav class="lg:flex items-center py-7 xl:relative z-10" x-data="{navbarOpen:false}">
 
                     <div class="flex items-center justify-between mb-2 lg:mb-0">
-                        <img src="assets/image/logoteste100.png" alt="Logo img" class="mx-10 w-100 md:w-80 lg:w-full">
+                        <img src="assets/image/logoteste100.png" alt="Logo img" class="mx-10 w-30 md:w-80 lg:w-full">
 
                         <button class="lg:hidden w-10 h-10 ml-auto flex items-center justify-center mx-16 text-white border border-green-700 rounded-md" @click="navbarOpen = !navbarOpen">
                             <i data-feather="menu"></i>
                         </button>
                     </div>
 
-                    <ul class="bg-green-800 lg:flex flex-col lg:flex-row lg:items-center lg:mx-auto lg:space-x-8 xl:space-x-16 justify-end" :class="{'hidden':!navbarOpen,'flex':navbarOpen, 'menu-right':navbarOpen}">
+                    <ul class="bg-green-900 lg:flex flex-col lg:flex-row lg:items-center lg:mx-auto lg:space-x-8 xl:space-x-16 justify-end" :class="{'hidden':!navbarOpen,'flex':navbarOpen, 'menu-right':navbarOpen}">
                         <li class="font-semibold text-white text-lg hover:text-gray-400 transition ease-in-out duration-300 mb-5 lg:mb-0">
                             <a href="#">Vantagens</a>
                         </li>
@@ -59,9 +59,9 @@
         </section>
 
         <div class="container max-w-screen-xl mx-auto px-4 text-center increased-height">
-            <h1 class="font-semibold text-4xl md:text-6xl lg:text-7xl text-gray-900 leading-normal mb-6">Faça sua viagem <br> agora mesmo</h1>
-            <p class="font-normal text-xl text-gray-600 leading-relaxed mb-12">Fazer a viagem tão sonhada, por um preço justo</p>
-            <button id="scrollToSection2" class="px-6 py-4 bg-green-700 text-white font-semibold text-lg rounded-xl hover:bg-green-900 transition ease-in-out duration-500">Fale conosco</button>
+            <h1 class="font-semibold text-4xl md:text-6xl lg:text-7xl text-gray-900 leading-normal mb-6">Agende a sua viagem <br> agora mesmo</h1>
+            <p class="font-normal text-xl text-gray-600 leading-relaxed mb-12">Faça a sua viagem com o melhor preço!</p>
+            <button id="scrollToSection2" class="px-6 py-4 bg-green-900 text-white font-semibold text-lg rounded-xl hover:bg-yellow-300 transition ease-in-out duration-500">Fale conosco</button>
         </div>
 
 
@@ -81,40 +81,40 @@
 
                     <div class="">
 
-                        <h1 class="font-semibold text-gray-900 text-xl md:text-4xl text-center leading-normal mb-6">Escolha de vários tipos de <br> viagens</h1>
+                        <h1 class="font-semibold text-gray-900 text-xl md:text-4xl text-center leading-normal mb-6">Viagens com os mais diversos<br> destinos</h1>
 
-                        <p class="font-normal text-gray-600 text-md md:text-xl text-center mb-16">Nós provemos uma seleção vasta de viagens para você e sua <br> família, ao seu alcance</p>
+                        <p class="font-normal text-gray-600 text-md md:text-xl text-center mb-16">Venha decidir seu próximo destino no nosso catálogo!</p>
 
                         <div class="flex flex-col md:flex-row justify-center xl:justify-start space-x-4 mb-20">
-                            <div class="px-8 h-20 mx-auto md:mx-0 bg-green-700 rounded-lg flex items-center justify-center mb-5 md:mb-0">
+                            <div class="px-8 h-20 mx-auto md:mx-0 bg-green-900 rounded-lg flex items-center justify-center mb-5 md:mb-0">
                                 <i data-feather="check-circle" class=" text-white"></i>
                             </div>
                             
                             <div class="text-center md:text-left">
-                                <h4 class="font-semibold text-gray-900 text-2xl mb-2">Garantia da Viagem</h4>
-                                <p class="font-normal text-gray-600 text-xl leading-relaxed">Nós garantimos a garantia da viagem para você não <br> ter que se preocupar!</p>
+                                <h4 class="font-semibold text-gray-900 text-2xl mb-2">Garantia de Conforto</h4>
+                                <p class="font-normal text-gray-600 text-xl leading-relaxed">Trabalhamos com viagens rápidas e ônibus <br> confortáveis, para você ter a sua melhor experiência!</p>
                             </div>
                         </div>
 
                         <div class="flex flex-col md:flex-row justify-center xl:justify-start space-x-4 mb-20">
-                            <div class="px-8 h-20 mx-auto md:mx-0 bg-green-700 rounded-lg flex items-center justify-center mb-5 md:mb-0">
+                            <div class="px-8 h-20 mx-auto md:mx-0 bg-green-900 rounded-lg flex items-center justify-center mb-5 md:mb-0">
                                 <i data-feather="lock" class=" text-white"></i>
                             </div>
 
                             <div class="text-center md:text-left">
                                 <h4 class="font-semibold text-gray-900 text-2xl mb-2">100% Seguro</h4>
-                                <p class="font-normal text-gray-600 text-xl leading-relaxed">Pagamentos com transparência e segurança, em todo <br> o momento</p>
+                                <p class="font-normal text-gray-600 text-xl leading-relaxed">Pagamentos com transparência e segurança, para <br> você não ter com o que se preocupar!</p>
                             </div>
                         </div>
 
                         <div class="flex flex-col md:flex-row justify-center xl:justify-start space-x-4">
-                            <div class="px-8 h-20 mx-auto md:mx-0 bg-green-700 rounded-lg flex items-center justify-center mb-5 md:mb-0">
+                            <div class="px-8 h-20 mx-auto md:mx-0 bg-green-900 rounded-lg flex items-center justify-center mb-5 md:mb-0">
                                 <i data-feather="credit-card" class=" text-white"></i>
                             </div>
 
                             <div class="text-center md:text-left">
-                                <h4 class="font-semibold text-gray-900 text-2xl mb-2">Prático com valores justos</h4>
-                                <p class="font-normal text-gray-600 text-xl leading-relaxed">Os melhores preços do mercado, viajar pode voltar <br> à sua vida</p>
+                                <h4 class="font-semibold text-gray-900 text-2xl mb-2">Melhores preços</h4>
+                                <p class="font-normal text-gray-600 text-xl leading-relaxed">Com os melhores preços do mercado, seria um <br> erro você não aproveitar nossos benefícios! <br>Vem garantir a sua!</p>
                             </div>
                         </div>
 
@@ -136,12 +136,12 @@
                 <div class="image-roulette-container">
                 <div class="image-roulette-track">
                     <div class="image-roulette-item">
-                        <img src="assets/image/fototeste3.png" alt="Image 1">
+                        <img src="assets/image/teste0.jpeg" alt="Image 1">
                         <div class="image-info">
                             <br>
-                            <h4 class="font-semibold text-gray-900 text-2xl mb-2">Viagem para Alagoas por apenas</h4>
+                            <h4 class="font-semibold text-gray-900 text-2xl mb-2">Viagem SP-AL/AL-SP por apenas</h4>
                             <div class="price-container">
-                                <p class="px-6 py-4 bg-green-700 text-white font-semibold text-lg rounded-xl hover:bg-green-900 transition ease-in-out duration-500">R$200,00</p>
+                                <p class="px-6 py-4 bg-green-900 text-white font-semibold text-lg rounded-xl hover:bg-green-900 transition ease-in-out duration-500">R$249.90</p>
                             </div>
                         </div>
                     </div>
@@ -183,7 +183,7 @@
 
             <div class="container max-w-screen-xl mx-auto px-4 xl:relative">
 
-                <div class="bg-green-800 flex flex-col lg:flex-row items-center justify-evenly py-14 rounded-3xl">
+                <div class="bg-green-900 flex flex-col lg:flex-row items-center justify-evenly py-14 rounded-3xl">
 
                     <div class="text-center lg:text-left mb-10 lg:mb-0">
                         <h1 class="font-semibold text-white text-4xl md:text-5xl lg:text-7xl leading-normal mb-2 mx-2">Fale conosco <br> e agende sua viagem</h1>
@@ -192,7 +192,7 @@
                     </div>
 
                     <div class="flex flex-col justify-evenly items-center md:space-x-0 space-y-4 mx-4">
-                        <a href="https://wa.me/82996226957" target="_blank" class="bg-yellow-300 text-black px-8 py-4 rounded-3xl flex items-center justify-center space-x-2 hover:bg-green-900 transition ease-in-out duration-500">
+                        <a href="https://wa.me/message/6NLT34BED36KB1" target="_blank" class="bg-yellow-300 text-black px-8 py-4 rounded-3xl flex items-center justify-center space-x-2 hover:bg-green-900 transition ease-in-out duration-500">
                             <img src="assets/image/whatsapp.svg" style="height: 2em;">
                             <strong class="text-lg">WhatsApp</strong>
                         </a>
@@ -217,11 +217,12 @@
         </section id="faleConosco">
         <!-- book section //end -->
         <!-- testimoni section -->
-        <section class="bg-gray-200 py-10 md:py-16">
+        <section id="opinioes" class="bg-gray-200 py-10 md:py-16">
 
             <div class="container max-w-screen-xl mx-auto px-4 xl:relative">
 
-                <p class="font-normal text-gray-700 text-lg md:text-xl text-center uppercase mb-6">Fórum</p>
+                <p class="font-normal text-gray-700 text-lg md:text-xl text-center uppercase mb-6">Opiniões
+                </p>
 
                 <h1 class="font-semibold text-gray-900 text-2xl md:text-4xl text-center leading-normal mb-14">O que dizem<br> Sobre Anny Turismo</h1>
 
@@ -271,7 +272,7 @@
 
             </div> <!-- container.// -->
 
-        </section>
+        </section id="opinioes">
         <!-- testimoni section //end -->
 
         <!-- footer -->
@@ -285,7 +286,7 @@
                         <p class="font-light text-center text-xl mb-10 text-white">Faça a viagem dos sonhos com <br> Anny</p>
 
                         <div class="flex items-center justify-center lg:justify-center space-x-5">
-                            <a href="https://wa.me/82996226957" target="_blank" class="px-3 py-3 bg-gray-200 text-gray-700 rounded-full hover:bg-yellow-300 hover:text-white transition ease-in-out duration-500">
+                            <a href="https://wa.me/message/6NLT34BED36KB1" target="_blank" class="px-3 py-3 bg-gray-200 text-gray-700 rounded-full hover:bg-yellow-300 hover:text-white transition ease-in-out duration-500">
                                 <i data-feather="phone"></i>
                             </a>
 
@@ -302,15 +303,17 @@
                     <div class="text-center lg:text-center mb-10 lg:mb-0">
                         <h4 class="font-semibold text-white text-2xl mb-6">Site</h4>
 
-                        <a href="#" class="block font-light text-white text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300">Início</a>
-
-                        <a href="#" class="block font-light text-white text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300">Visão</a>
-                        
-                        <a href="#" class="block font-light text-white text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300">Fotos</a>
-                        
-                        <a href="#" class="block font-light text-white text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300">Testemunhas</a>
-                        
                         <a href="#" class="block font-light text-white text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300">Agende sua viagem</a>
+
+                        <a href="#" class="block font-light text-white text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300">Vantagens</a>
+                        
+                        <a href="#" class="block font-light text-white text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300">Destinos</a>
+
+                        <a id="scrollToSection3" href="#" class="block font-light text-white text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300">Opiniões</a>
+
+                        <a href="#" class="block font-light text-white text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300">Privacidade</a>
+                        
+                        <a href="#" class="block font-light text-white text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300">Termos e condições</a>
                     </div>
                 </div>
             </div> <!-- container.// -->
@@ -331,6 +334,14 @@
                $("#scrollToSection2").on("click", function () {
                   $('html, body').animate({
                      scrollTop: $("#faleConosco").offset().top
+                  }, 1000); // O número 1000 representa a duração da animação em milissegundos
+               });
+            });
+
+            $(document).ready(function () {
+               $("#scrollToSection3").on("click", function () {
+                  $('html, body').animate({
+                     scrollTop: $("#opinioes").offset().top
                   }, 1000); // O número 1000 representa a duração da animação em milissegundos
                });
             });
