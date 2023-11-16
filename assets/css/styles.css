@@ -1,6 +1,7 @@
 .increased-height {
     height: 500px; /* Defina a altura desejada em pixels */
 }
+
 .price-container {
   max-width: 140px; /* ou ajuste conforme necessário */
   margin: 0 auto; /* para centralizar a caixa verde */

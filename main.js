@@ -14,6 +14,10 @@ function mudarImagens(regiao) {
 }
 
 // JavaScript para a roleta de imagens
+let isDragging = false;
+let startPosX = 0;
+let currentPosX = 0;
+
 let currentIndex = 0;
 const items = document.querySelectorAll('.image-roulette-item');
 const indicators = document.querySelector('.image-indicators');
@@ -50,3 +54,62 @@ function prevImage() {
 
 updateIndicators();
 
+const rouletteTrack = document.querySelector('.image-roulette-track');
+
+rouletteTrack.addEventListener('mousedown', (event) => {
+  isDragging = true;
+  startPosX = event.clientX || event.touches[0].clientX;
+  currentPosX = startPosX;
+});
+
+rouletteTrack.addEventListener('touchstart', (event) => {
+  isDragging = true;
+  startPosX = event.touches[0].clientX;
+  currentPosX = startPosX;
+});
+
+document.addEventListener('mousemove', (event) => {
+  if (isDragging) {
+    currentPosX = event.clientX || event.touches[0].clientX;
+  }
+});
+
+document.addEventListener('touchmove', (event) => {
+  if (isDragging) {
+    currentPosX = event.touches[0].clientX;
+  }
+});
+
+document.addEventListener('mouseup', () => {
+  if (isDragging) {
+    const diffX = currentPosX - startPosX;
+    const threshold = 50; // Defina um limite para determinar se deve mudar de imagem ou não
+
+    if (Math.abs(diffX) > threshold) {
+      if (diffX > 0) {
+        prevImage();
+      } else {
+        nextImage();
+      }
+    }
+
+    isDragging = false;
+  }
+});
+
+document.addEventListener('touchend', () => {
+  if (isDragging) {
+    const diffX = currentPosX - startPosX;
+    const threshold = 50; // Defina um limite para determinar se deve mudar de imagem ou não
+
+    if (Math.abs(diffX) > threshold) {
+      if (diffX > 0) {
+        prevImage();
+      } else {
+        nextImage();
+      }
+    }
+
+    isDragging = false;
+  }
+});
