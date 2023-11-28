@@ -43,11 +43,11 @@
                         </li>
         
                         <li class="font-semibold text-white text-lg hover:text-gray-400 transition ease-in-out duration-300 mb-5 lg:mb-0">
-                            <a id="scrollToSection" href="#">Contato</a>
+                            <a id="scrollToSection3" href="#">Contato</a>
                         </li>
         
                         <li class="font-semibold text-white text-lg hover:text-gray-400 transition ease-in-out duration-300 mb-5 lg:mb-0">
-                            <a href="#">Sobre</a>
+                            <a id="scrollToSection9" href="#">Comentários</a>
                         </li>
 
                     </ul>
@@ -228,7 +228,7 @@
                     <div class="text-center lg:text-left mb-12 lg:mb-20 md:mb-16"> <!-- Ajustei as margens inferior para diferentes tamanhos de tela -->
                         <h1 class="font-semibold text-white text-4xl md:text-5xl lg:text-7xl leading-normal mb-6 md:mb-8 mx-8">Fale conosco <br> e agende sua viagem!</h1>
             
-                        <p class="font-normal text-white text-md md:text-xl mx-8">Nossas redes sociais!</p>
+                        <p class="font-normal text-white text-md md:text-xl mx-8">Nossas redes sociais:</p>
                     </div>
             
                     <div class="flex flex-col justify-evenly items-center md:space-x-0 space-y-6 mx-10 mt-6 lg:mt-0"> <!-- Ajustei a margem superior -->
@@ -284,9 +284,9 @@
                             <i data-feather="star" class="text-yellow-500"></i>
                         </div>
 
-                        <p class="font-normal text-sm lg:text-md text-gray-400 mx-8 my-8">A aaaaaaaaaaaaaa aaaaaaaaaaa aaaaaa<br> B bbbbbbbb bbbbbbbbbb bbbbbbbbbbbbb <br> cc ccccccccc ccccccccccccccccccccc </p>
+                        <p class="font-normal text-sm lg:text-md text-gray-400 mx-8 my-8">Melhor empresa do ramo de <br> viagens,  fui e recomendo!</p>
 
-                        <h3 class="font-semibold text-gray-900 text-xl md:text-2xl lg:text-3xl mx-8 mb-8">Brooklyn Simmons</h3>
+                        <h3 class="font-semibold text-gray-900 text-xl md:text-2xl lg:text-3xl mx-8 mb-8">Gabriel Lima</h3>
                     </div>
 
                     <div class="bg-white rounded-lg">
@@ -300,9 +300,9 @@
                             <i data-feather="star" class="text-yellow-500"></i>
                         </div>
 
-                        <p class="font-normal text-sm lg:text-md text-gray-400 mx-8 my-8">D ddddddddddd ddddddddddddddddd dddddddddd<br> ffffffffffvfffffffffffvfffffffffffffffffff<br> gggggggggggvgggggv gggg</p>
+                        <p class="font-normal text-sm lg:text-md text-gray-400 mx-8 my-8">Atenciosos do início ao, <br> fim! Recomendo demais.</p>
 
-                        <h3 class="font-semibold text-gray-900 text-xl md:text-2xl lg:text-3xl mx-8 mb-8">Ralph Edwards</h3>
+                        <h3 class="font-semibold text-gray-900 text-xl md:text-2xl lg:text-3xl mx-8 mb-8">Lucas Emanuel</h3>
                     </div>
 
                 </div>
@@ -340,15 +340,11 @@
                     <div class="text-center lg:text-center mb-10 lg:mb-0">
                         <h4 class="font-semibold text-white text-2xl mb-6">Site</h4>
 
-                        <a id="scrollToSection5" href="#" class="block font-light text-white text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300">Vantagens</a>
+                        <a id="scrollToSection6" href="#" class="block font-light text-white text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300">Vantagens</a>
                         
-                        <a id="scrollToSection4" href="#" class="block font-light text-white text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300">Destinos</a>
+                        <a id="scrollToSection8" href="#" class="block font-light text-white text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300">Destinos</a>
 
-                        <a id="scrollToSection3" href="#" class="block font-light text-white text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300">Opiniões</a>
-
-                        <a href="#" class="block font-light text-white text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300">Privacidade</a>
-                        
-                        <a href="#" class="block font-light text-white text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300">Termos e condições</a>
+                        <a id="scrollToSection7" href="#" class="block font-light text-white text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300">Comentários</a>
                     </div>
                 </div>
             </div> <!-- container.// -->
@@ -366,7 +362,7 @@
             });
 
             $(document).ready(function () {
-               $("#scollToSection2").on("click", function () {
+               $("#scrollToSection2").on("click", function () {
                   $('html, body').animate({
                      scrollTop: $("#faleConosco").offset().top
                   }, 1000); // O número 1000 representa a duração da animação em milissegundos
@@ -377,7 +373,7 @@
                $("#scrollToSection3").on("click", function () {
                   $('html, body').animate({
                      scrollTop: $("#opinioes").offset().top
-                  }, 500); // O número 1000 representa a duração da animação em milissegundos
+                  }, 1000); // O número 1000 representa a duração da animação em milissegundos
                });
             });
             $(document).ready(function () {
@@ -391,6 +387,34 @@
                $("#scrollToSection5").on("click", function () {
                   $('html, body').animate({
                      scrollTop: $("#vantagens").offset().top
+                  }, 1000); // O número 1000 representa a duração da animação em milissegundos
+               });
+            });
+            $(document).ready(function () {
+               $("#scrollToSection6").on("click", function () {
+                  $('html, body').animate({
+                     scrollTop: $("#vantagens").offset().top
+                  }, 1000); // O número 1000 representa a duração da animação em milissegundos
+               });
+            });
+            $(document).ready(function () {
+               $("#scrollToSection7").on("click", function () {
+                  $('html, body').animate({
+                     scrollTop: $("#opinioes").offset().top
+                  }, 700); // O número 1000 representa a duração da animação em milissegundos
+               });
+            });
+            $(document).ready(function () {
+               $("#scrollToSection8").on("click", function () {
+                  $('html, body').animate({
+                     scrollTop: $("#destinos").offset().top
+                  }, 800); // O número 1000 representa a duração da animação em milissegundos
+               });
+            });
+            $(document).ready(function () {
+               $("#scrollToSection9").on("click", function () {
+                  $('html, body').animate({
+                     scrollTop: $("#opinioes").offset().top
                   }, 1000); // O número 1000 representa a duração da animação em milissegundos
                });
             });
